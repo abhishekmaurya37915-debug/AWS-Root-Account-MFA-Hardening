@@ -91,6 +91,48 @@ Selected the Add Account (+) button within Google Authenticator and selected Sca
 
 <img width="1407" height="581" alt="image" src="https://github.com/user-attachments/assets/4f9745ff-d515-49f1-8f78-db7b0e34572b" />
 
+Returned to the master IAM Dashboard to verify overall tenant health:
 
+1. **Security Recommendations:** The number of outstanding security recommendations decreased from 1 to 0.
+2. **Root User MFA:** The IAM dashboard displayed a green passing indicator confirming that MFA was enabled for the root user.
+3. **Root Access Keys:** The dashboard showed zero active root access keys, reducing the risk associated with long-term programmatic credentials.
 
 <img width="1900" height="817" alt="image" src="https://github.com/user-attachments/assets/56631de0-eaff-4497-a8d4-da9d7eb8c459" />
+
+## Results
+
+| Security Check | Observed Result |
+|---|---|
+| Root user MFA | Enabled |
+| MFA registration | Successful |
+| Security recommendations | 0 outstanding |
+| Active root access keys | 0 |
+
+
+## Security Best Practices
+- Always enable MFA on the AWS root user.
+- Avoid using the root user for routine administrative tasks.
+- Do not create root access keys unless absolutely necessary.
+- Use IAM roles and temporary credentials where appropriate.
+- Apply least-privilege permissions to IAM users and roles.
+- Never publish passwords, MFA QR codes, secret keys, access keys, or sensitive account information.
+- Review AWS security recommendations regularly.
+
+## Key Learnings
+- Understanding root account security in AWS.
+- Configuring virtual MFA using an authenticator application.
+- Verifying security settings in the IAM dashboard.
+- Understanding the risks associated with root access keys.
+- Documenting cloud security hardening activities.
+
+## Conclusion
+Successfully configured MFA for the AWS root user and verified the account's security status through the AWS Management Console.
+
+The project demonstrates essential cloud security practices that help protect privileged accounts and reduce the risk of unauthorized access.
+
+## Disclaimer
+This project was performed for educational purposes in an AWS account under my control. All screenshots should be sanitized before public sharing.
+
+---
+**Project:** AWS Root Account MFA Hardening  
+**Domain:** Cloud Security | AWS IAM | Identity and Access Management
