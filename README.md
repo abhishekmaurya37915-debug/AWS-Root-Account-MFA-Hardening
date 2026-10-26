@@ -44,3 +44,5 @@ Inspected the IAM Dashboard overview. The console reported an active security po
 Recommendation: "Add MFA for root user - Enable multi-factor authentication (MFA) for the root user to improve security for this account."
 Selected Add MFA to launch the device association wizard.
 
+
+
